@@ -1,0 +1,13 @@
+[workspace]
+channels = ["conda-forge"]
+name = "pixi_python_template"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.10.*"
+
+[pypi-dependencies]
+testpackage = { path = "./code/testpackage", editable = true }
